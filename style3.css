@@ -1,0 +1,345 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+}
+.sidebar {
+  width: 350px;
+  background-color: #003938;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: width 0.3s ease; /* Transition pour le repli */
+  overflow: hidden;
+}
+.sidebar.collapsed {
+  width: 60px; /* Largeur de la sidebar repliée */
+}
+
+.sidebar h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Empêche le texte de se couper */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: left;
+  color: green;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+header h1 {
+  margin: auto;
+  font-size: 60px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  flex: 1;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  border-radius: 32px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+.card1 {
+  background-color: rgb(255, 255, 87);
+}
+.card2 {
+  background-color: rgb(224, 255, 47);
+}
+.card3 {
+  background-color: greenyellow;
+}
+.card4 {
+  background-color: rgb(84, 155, 22);
+  color: #ffffff;
+}
+.card5 {
+  background-color: green;
+  color: #ffffff;
+}
+.card h3 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.card p {
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+.titre-partie {
+  font-size: 44px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sous-titre-partie {
+  font-size: 24px;
+  margin: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+h4 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.content1 {
+  background-color: #eee82c;
+  padding: 20px;
+  border-radius: 32px;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item p {
+  margin: 0;
+}
+.content-wrapper {
+  display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+  align-items: flex-start; /* Aligne les éléments en haut */
+  gap: 20px; /* Ajoute un espace entre la section et l'image */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 2; /* La section `.content` prend plus de place */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 32px;
+  margin-bottom: 50px;
+}
+
+.content-image {
+  flex: 1; /* L'image prend moins de place */
+  max-width: 50%; /* L'image ne dépasse pas la largeur disponible */
+  height: auto; /* Garde les proportions de l'image */
+  border-radius: 32px; /* Ajoute des coins arrondis */
+}
+
+/* footer styles */
+footer {
+  width: 100%;
+  background-color: #003938;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+footer > div {
+  flex: 1; /* Les éléments internes prennent une largeur égale */
+  margin: 10px; /* Ajoute un espacement entre les éléments */
+}
+
+footer .logofooter {
+  width: 100px; /* Taille du logo */
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+footer .newsletter {
+  max-width: 300px; /* Limite la largeur de la newsletter */
+  text-align: left; /* Aligne le texte à gauche */
+}
+.logofooter {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.newsletter {
+  max-width: 300px;
+  padding: 2px;
+  border-radius: 32px;
+  margin-bottom: 20px;
+}
+footer .address {
+  margin: 20;
+  max-width: 300px;
+}
+.mini-map {
+  margin-top: 20px; /* Ajoute un espace au-dessus de la carte */
+  border: 1px solid #ccc; /* Ajoute une bordure autour de la carte */
+  border-radius: 32px; /* Coins arrondis */
+  overflow: hidden; /* Masque les débordements pour les coins arrondis */
+  max-width: 300px;
+}
+.phone,
+.address {
+  display: flex; /* Aligne l'icône et le texte horizontalement */
+  align-items: center; /* Centre verticalement l'icône et le texte */
+  gap: 10px; /* Ajoute un espace entre l'icône et le texte */
+  font-size: 16px; /* Taille du texte */
+}
+
+.icon {
+  width: 20px; /* Taille de l'icône */
+  height: 20px;
+}
+.social {
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+footer .réseaux-sociaux a {
+  margin: 0 10px;
+}
+
+footer .réseaux-sociaux img {
+  width: 60px;
+  height: 60px;
+}
+.ds-footer-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#inscription {
+  width: 50px; /* Largeur du bouton */
+  height: 50px; /* Hauteur du bouton (égale à la largeur pour un cercle) */
+  border-radius: 50%; /* Rend le bouton rond */
+  background-color: #2e7d32; /* Couleur de fond */
+  display: flex; /* Centre le contenu à l'intérieur */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  border: none; /* Supprime la bordure */
+  cursor: pointer; /* Change le curseur en pointeur */
+}
+
+#inscription:hover {
+  background-color: #ccc; /* Couleur de fond au survol */
+}
+.ds-input-sub-container input {
+  background-color: transparent; /* Fond transparent */
+  border: 2px solid #ccc; /* Bordure fine */
+  border-radius: 12px; /* Bords arrondis */
+  height: 50px; /* Hauteur de l'input */
+  padding: 0 10px; /* Espace intérieur horizontal */
+  color: #ccc; /* Couleur du texte */
+  font-size: 14px; /* Taille du texte */
+  outline: none; /* Supprime le contour bleu par défaut */
+}
+
+.ds-input-sub-container input::placeholder {
+  opacity: 1; /* Assure que le placeholder est visible */
+}
+
+.ds-input-sub-container input:focus {
+  border-color: #2e7d32; /* Change la couleur de la bordure au focus */
+}
+.ds-input-sub-container input:hover {
+  border-color: #2e7d32; /* Change la couleur de la bordure au survol */
+}
+.ds-input-sub-container {
+  position: relative; /* Nécessaire pour positionner le label par rapport à l'input */
+  width: 100%; /* Ajustez selon vos besoins */
+}
+
+.ds-input-sub-container label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: all 0.3s ease; /* Animation pour le déplacement et la réduction */
+  pointer-events: none; /* Empêche l'interaction avec le label */
+}
+
+.ds-input-sub-container input:focus + .ds-label,
+.ds-input-sub-container input:not(:placeholder-shown) + .ds-label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  padding: 4px;
+  color: #2e7d32; /* Change la couleur du label au focus */
+  background-color: #003938; /* Fond du label au focus */
+}
+.card1:hover {
+  
+  transform: scale(1.2); /* Agrandit le tableau de bord au survol*/
+  transition: transform 0.3s ease; /* Animation pour l'agrandissement */
+}
+.card2:hover {
+  transform: scale(1.2); /* Agrandit le tableau de bord au survol */
+  transition: transform 0.3s ease; /* Animation pour l'agrandissement */
+}
+.card3:hover {
+  transform: scale(1.2); /* Agrandit le tableau de bord au survol */
+  transition: transform 0.3s ease; /* Animation pour l'agrandissement */
+}
+.card4:hover {
+  transform: scale(1.2); /* Agrandit le tableau de bord au survol */
+  transition: transform 0.3s ease; /* Animation pour l'agrandissement */
+}
+.card5:hover {
+  transform: scale(1.2); /* Agrandit le tableau de bord au survol */
+  transition: transform 0.3s ease; /* Animation pour l'agrandissement */
+}

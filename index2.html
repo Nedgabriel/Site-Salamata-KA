@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>formulaire d'enregistrement</title>
+    <link rel="stylesheet" href="C:\Users\Gabriel\OneDrive\Documents\DEV\Site Salamata\style2.css" />
+  </head>
+  <body>
+    <h1 class="Salamata-ka">
+      <a href="file:///c%3A/Users/Gabriel/OneDrive/Documents/DEV/Site%20Salamata/index.html" target="_blank">
+        <img 
+          class="seance-icon"
+          src="C:\Users\Gabriel\OneDrive\Documents\DEV\Site Salamata\logo couleur sophro.png"
+          alt="relax icon"
+        />
+      </a>
+      <div class="text-container">
+        <span>Salamata KA</span>
+        <p class="established">Sophrologue</p>
+      </div>
+    </h1>
+    <div class="buttons-container">
+      <button class="btn"><span>La sophrologie</span></button>
+      <button class="btn"><span>Présentation</span></button>
+      <button class="btn"><span>Formations</span></button>
+      <button class="btn"><span>Séance</span></button>
+      <button class="btn"><span>Prix</span></button>          
+      <button class="btn"><span>Contact</span></button>
+      <button class="btn"><span>Connection</span></button>
+    </div>
+    <h2>formulaire d'enregistrement</h2>
+    <p>veuillez remplir ce formulaire avec les informations requises</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Prénom: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Nom: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">E-mail: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Créer un mot de passe : <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>type de compte (requis)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personnel</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Entreprise</label>
+      </fieldset>
+      <fieldset>
+        <label for="age">Saisissez votre âge (années) : <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">comment m'avez vous connu ?
+          <select id="referrer" name="referrer">
+            <option value="">(en selectionnant un)</option>
+            <option value="1">site web</option>
+            <option value="2">bouche a oreille</option>
+            <option value="3">flyer</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">décrivez votre besoin :
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="je suis à la recherche..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> J'accepte les <a href="https://www.freecodecamp.org/news/terms-of-service/">termes et conditions</a>
+      </label>
+      <input type="submit" value=" Soumettre" />
+    </form>
+    <footer class="footer">
+      <p class="réseaux-sociaux">
+        <a href="https://linktr.ee" target="_blank">
+          <img
+            class="linktree-icon"
+            src="https://cdn.brandfetch.io/id_tNIm05N/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="linktree icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/salamata-ka-sophrologue/"
+          target="_blank"
+        >
+          <img
+            class="linkdin-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+            alt="linkedin icon"
+        /></a>
+        <a
+          href="https://www.instagram.com/salamataleldo?igsh=dG0yMGY2NHZrbzVh"
+          target="_blank"
+        >
+          <img
+            class="instagram-icon"
+            src="https://cdn.brandfetch.io/ido5G85nya/theme/light/id8qc6z_TX.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="instagram icon"
+        /></a>
+      </p>
+
+      <p class="address">4 AV DE LA ROSE DES VENTS 26000 VALENCE</p>
+    </footer>
+  </body>
+</html>
+  </body>
+</html>
